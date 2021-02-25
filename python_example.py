@@ -4,7 +4,7 @@ mandrill_client = mandrill.Mandrill('API-KEY-GOES-HERE')
 m = mandrill.Mandrill('API-KEY-GOES-HERE')
 
 try:
-    mandrill_client = mandrill.Mandrill('qJK9nzujxGo6CeMjJVCJzA')
+    mandrill_client = mandrill.Mandrill('API-KEY-GOES-HERE')
     message = {
         'from_email': 'jonshogren@mac.com',
         'from_name': 'Jon Shogren',
