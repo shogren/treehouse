@@ -6,14 +6,14 @@ m = mandrill.Mandrill('API-KEY-GOES-HERE')
 try:
     mandrill_client = mandrill.Mandrill('API-KEY-GOES-HERE')
     message = {
-        'from_email': 'jonshogren@mac.com',
-        'from_name': 'Jon Shogren',
-        'headers': {'Reply-To': 'jonshogren@mac.com'},
+        'from_email': 'YOUR_FROM_EMAIL',
+        'from_name': 'YOUR_FROM_NAME',
+        'headers': {'Reply-To': 'YOUR_EMAIL'},
         'html': '<p>Man I hope this works!</p>',
         'subject': 'Test Send from Python',
         'text': 'Man I hope this works!',
-        'to': [{'email': 'jonathanshogren@gmail.com',
-                'name': 'Jonathan Shogren',
+        'to': [{'email': 'YOUR_TO_ADDRESS',
+                'name': 'YOUR_TO_NAME',
                 'type': 'to'}],
         }     
     result = mandrill_client.messages.send(message=message, async=False,send_at='1437055128'))
